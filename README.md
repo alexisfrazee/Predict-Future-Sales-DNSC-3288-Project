@@ -159,7 +159,7 @@ XGBRegressor(
 
 #### ROC Curve — Predicting “Any Sale?”
 
-![ROC Curve](./plots/roc_curve.png)
+![ROC Curve](./roc_curve.png)
 
 ---
 
