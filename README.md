@@ -8,7 +8,7 @@
 - **Author(s):**
   - Alexis F, alexis@gwu.edu 
 - **File with model implementation:**
-  - [`frazee_dnsc_3288_final_project.ipynb`](./frazee_dnsc_3288_final_project.ipynb)
+  - [`Alexis_DNSC_3288_Final_Project.ipynb`](./Alexis_DNSC_3288_Final_Project.ipynb)
 - **License:** Apache 2.0 
 - **Model type:** Gradient-boosted decision tree regressor (`XGBRegressor` from XGBoost)
 
