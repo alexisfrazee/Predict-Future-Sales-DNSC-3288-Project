@@ -140,26 +140,24 @@ XGBRegressor(
 | Dataset | Metric | Value |
 |---------|--------|-------|
 | Validation | RMSE | **0.6669** |
-| Validation | AUC | **0.8581** |
-| Validation | AIR | **0.9718** |
-| Kaggle Public Leaderboard | RMSE | **1.00015** |
+|Test (Kaggle) | RMSE | **1.00015** |
 
 ---
 
 ### 5.2 Interpretation of Results
 
 - The **Validation RMSE of 0.6669** indicates the model predicts monthly shop–item sales with an average error of less than 1 unit (after clipping), which is strong performance given the sparsity and volatility of the data.
-- The **AUC of 0.8581** shows the model is highly effective at distinguishing between “any sales” vs. “no sales” months, despite not being optimized as a classifier.
-- The **AIR of 0.9718** suggests that predicted positive sales rates are very similar across the two shop groups evaluated.  
-  - Since AIR is close to 1.0 and well above the commonly used **0.80 threshold**, there is **no immediate evidence of adverse impact** in this fairness check.
+- The **Test Validation RMSE of 1.00015** indicates that predictions differ from true monthly sales by about one item per shop–item pair. Given that most monthly quantities fall between 0–3 units, this represents relatively strong forecasting accuracy.
 
 
 ---
 ### 5.3 Plots
 
-#### ROC Curve — Predicting “Any Sale?”
+#### RMSE Plot — Actual vs Predicted Sales with RMSE Error Lines
 
 ![ROC Curve](./roc_curve.png)
+
+PLot used mean of observations for better visualization.
 
 ---
 
