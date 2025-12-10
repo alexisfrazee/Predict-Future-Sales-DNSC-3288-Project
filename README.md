@@ -155,9 +155,9 @@ XGBRegressor(
 
 #### RMSE Plot — Actual vs Predicted Sales with RMSE Error Lines
 
-![ROC Curve](./roc_curve.png)
+![RMSE Plot](./RMSE_Plot.png)
 
-PLot used mean of observations for better visualization.
+Plot used mean of observations for better visualization.
 
 ---
 
