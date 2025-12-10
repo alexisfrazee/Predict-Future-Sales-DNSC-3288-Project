@@ -131,8 +131,7 @@ XGBRegressor(
 | Metric | Type | Why Included |
 |--------|------|--------------|
 | RMSE (Root Mean Squared Error) | Regression | Kaggle competition metric |
-| AUC (Area Under the ROC Curve) | Binary classification (derived) | Required by assignment, evaluates ability to distinguish sale vs. no sale |
-| AIR (Adverse Impact Ratio) | Fairness | Required by assignment, compares prediction rates across groups |
+
 
 ---
 ### 5.1 Performance Summary
@@ -213,8 +212,6 @@ This section discusses potential negative impacts, uncertainties, and unexpected
   Many shop–item pairs have no monthly sales, indicating a highly sparse demand distribution — this affects accuracy and makes the binary “any sale?” problem meaningful.
 - **Lag features help, but not equally:**  
   Recent lags (1–3 months) influence performance much more than longer seasonal lags (6–12 months).
-- **AUC performance higher than expected:**  
-  Although not trained as a classifier, the model demonstrates reasonable ability to separate “sale vs. no sale,” suggesting strong reliance on recurring shop–item patterns.
 - **Certain shops/items dominate predictions:**  
   Items with consistent histories are predicted well; niche items remain hard to forecast — highlighting inequality in data representation.
 
