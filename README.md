@@ -219,3 +219,9 @@ This section discusses potential negative impacts, uncertainties, and unexpected
   Although not trained as a classifier, the model demonstrates reasonable ability to separate “sale vs. no sale,” suggesting strong reliance on recurring shop–item patterns.
 - **Certain shops/items dominate predictions:**  
   Items with consistent histories are predicted well; niche items remain hard to forecast — highlighting inequality in data representation.
+
+  ---
+
+  ### References
+
+  ChatGPT and Gemini were used to assist in coding and idea generation. 
